@@ -18,4 +18,3 @@ for n in range(1, 10**6):
     if r > 50:
         print(n)
         break
-
