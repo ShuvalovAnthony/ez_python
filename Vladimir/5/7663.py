@@ -8,4 +8,4 @@ for num in range(100, 1000):
         num3 = str(num2) + str(num1)
 
     if num3 == "1412":
-        print(num)  
+        print(num)
