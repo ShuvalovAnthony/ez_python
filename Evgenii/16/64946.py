@@ -12,3 +12,4 @@ for n in range(10**7, 9*10**7 + 1):
 
 
 print(counter)
+
