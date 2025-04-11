@@ -2,8 +2,7 @@ from string import ascii_uppercase
 
 f = open("Daniil/24/5677/24_5677.txt").read()
 
-starts = ['AD', 'D']
-endings = ['DA', 'D']
+
 
 # f = f.replace("DAD", '_')
 
@@ -16,6 +15,9 @@ endings = ['DA', 'D']
 # AD                      DA
 # D                       D
 
+starts = ['AD', 'D', '']
+endings = ['DA', 'D', '']
+
 max_len = 0
 
 for i in range(50, 0, -1):
@@ -26,5 +28,3 @@ for i in range(50, 0, -1):
                 max_len = max(max_len, len(res))
 
 print(max_len)
-
-print("DAD"*32)
