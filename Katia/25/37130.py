@@ -2,10 +2,8 @@ def check(n):
     deliteli_ok_na_7 = set()
 
     for i in range(2, int(n**0.5) + 1):
-        if i == 7: continue
-
         if (n%i == 0): # нашли пару делителей и для каждого!! из них проверяем условия
-            if i%10 == 7: deliteli_ok_na_7.add(i)
+            if (i%10 == 7) and (i != 7): deliteli_ok_na_7.add(i)
             if (n//i)%10 == 7: deliteli_ok_na_7.add(n//i)
 
     if not len(deliteli_ok_na_7): return False
