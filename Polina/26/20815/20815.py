@@ -42,7 +42,6 @@ for cosm in passed:
         id = cosm[0]
 
 
-
 counter = 0
 
 for cosm in passed:
