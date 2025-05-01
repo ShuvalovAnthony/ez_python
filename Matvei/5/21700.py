@@ -18,5 +18,5 @@ for n in range(3, 10000):
 
     r = int(tri_n, 3)
 
-    if r <= 150:
+    if r <= 130:
         print(n)

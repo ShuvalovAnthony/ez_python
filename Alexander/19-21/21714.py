@@ -21,9 +21,9 @@ def f(s, step=1): # 1p 2v 3p 4v 5p
 
 
 
-# for s in range(2, 127):
-#     if f(s):
-#         print(s)
+for s in range(2, 127):
+    if f(s):
+        print(s)
 
 
 # 20ая
