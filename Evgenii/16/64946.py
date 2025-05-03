@@ -10,6 +10,5 @@ for n in range(10**7, 9*10**7 + 1):
     if f(n) == 25:
         counter += 1
 
-
 print(counter)
 
