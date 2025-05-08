@@ -17,16 +17,16 @@
 # print(3*f(53079) - (f(53077) + f(53075) + f(53073)))
 
 
-f = [0]*54000
+# f = [0]*54000
 
-for n in range(54000):
-    if n <= 5:
-        f[n] = 1000
-    else:
-        f[n] = n + 3 + f[n - 2]
+# for n in range(54000):
+#     if n <= 5:
+#         f[n] = 1000
+#     else:
+#         f[n] = n + 3 + f[n - 2]
 
 
-print(3*f[53079] - (f[53077] + f[53075] + f[53073]))
+# print(3*f[53079] - (f[53077] + f[53075] + f[53073]))
 
 
 # speeds = []
@@ -37,3 +37,31 @@ print(3*f[53079] - (f[53077] + f[53075] + f[53073]))
 #     speeds.append(speed)
 
 # print(sum(speeds)/len(speeds))
+
+
+
+
+students = {
+    1: {
+        "name": "Aboba",
+        "age": 99,
+        "city": "Moscow"
+        },
+    2: {
+        "name": "Gogogo",
+        "age": 99,
+        "city": "Moscow"
+        },
+    3: {
+        "name": "Bbb",
+        "age": 99,
+        "city": "Moscow"
+        },
+}
+
+
+# for key, value in students.items():
+#     print(key, value["name"])
+
+
+print(1 in students)
