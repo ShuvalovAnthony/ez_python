@@ -1,3 +1,8 @@
+from string import ascii_uppercase
+
+print(len("qwertyuiopasdfghjklzxcvbnm"))
+
+
 # типы данных
 
 # int float - числа
@@ -287,3 +292,5 @@ text = "Fdsg9saagjdfeeeg"
 
 # for n in range(10):
 #     print("YES" if n%2 == 0 else "NO")
+
+

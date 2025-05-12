@@ -3,7 +3,7 @@ from time import sleep
 
 
 class Hero:    
-    def init(self, name: str, dmg: int, hp: int=100):
+    def __init__(self, name: str, dmg: int, hp: int=100):
         self.name = name
         self.dmg = dmg
         self.hp = hp
@@ -26,9 +26,10 @@ class Hero:
 
 
 class Swordsman(Hero):
-    def init(self, name, lvl = 1, hp = 100, protectRate: float=0.8):
+    def __init__(self, name, lvl = 1, hp = 100, protectRate: float=0.8):
         self.protectRate = protectRate
-        super().init(name, lvl, hp)
+        super().__init__(name, lvl, hp)
+
 
     # def changeHp(self, deltaHpAmount):
     #     self.hp += self.protectRate*deltaHpAmount
@@ -42,9 +43,9 @@ class Archer(Hero):
 
 
 class Assasin(Hero):
-    def init(self, name, dmg, hp = 100, critRate = 2.5):
+    def __init__(self, name, dmg, hp = 100, critRate = 2.5):
         self.critRate = critRate
-        super().init(name, dmg, hp)
+        super().__init__(name, dmg, hp)
 
     def attack(self, target):
         chance = randint(1, 100)
@@ -58,9 +59,9 @@ class Assasin(Hero):
 
 
 class Priest(Hero):
-    def init(self, name: str, dmg: int, healAmount: int, hp = 100):
+    def __init__(self, name: str, dmg: int, healAmount: int, hp = 100):
         self.healAmount = healAmount
-        super().init(name, dmg, hp)
+        super().__init__(name, dmg, hp)
 
     def heal(self, target):
         target.changeHp(self.healAmount)
