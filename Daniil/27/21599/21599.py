@@ -22,7 +22,7 @@ for row in f:
     else:
         clasters[5].append([x, y])
     
-
+print([len(i) for i in clasters])
 
 def get_centroida(claster):
     centroida = None
