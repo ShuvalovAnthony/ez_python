@@ -25,7 +25,5 @@ for i in range(len(indexes) - 129):
                 min_len = min(min_len, len(subs) + 260 + j)
     except:
         ...
-    # if subs[-1] != "Q":
-    #     min_len = min(min_len, len(subs) + 260)
 
 print(min_len)
