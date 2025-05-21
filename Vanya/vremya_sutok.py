@@ -1,12 +1,11 @@
-num = input()
-
-if num.isdecimal():
-    num = int(num)
-    if num > 5:
-        print("utro")
-    elif 5 <= num <= 10:
-        print("den")
-else:
-    print("Ошибка")
+from itertools import permutations
 
 
+vars = []
+
+for p in permutations("SSSCCKK", r=3):
+    vars.append(''.join(p))
+
+vars = list(set(vars))
+
+print(vars.count("SSS"), len(vars))
