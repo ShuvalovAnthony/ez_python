@@ -14,13 +14,7 @@ print(pin_code) # позже закомментировать
 
 while True:
     print()
-    guess = input("Input pin code ")
+    guess = input("Введите пинкод ")
 
-    if pin_code == guess:
-        print("Right pin")
-        break
-
-    
-    if pin_code[0] == guess[0]:
-        print("...")
+    # твой код
     
