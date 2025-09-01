@@ -30,8 +30,6 @@ for i in range(len(data)):
 
 
 
-
-
 # # 17 zadacha
 # f = open("Katia/vars/19_08_25/17_23201.txt")
 
