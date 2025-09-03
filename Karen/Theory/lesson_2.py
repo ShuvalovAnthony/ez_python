@@ -53,14 +53,30 @@ print(s[2:]) # начиная со 2ого и до конца
 # 01234
 # 579B
 # FC9
-print(s[3:12])
-print(s[10:-1])
-print(s[:5])
-print(s[5:12:2])
-print(s[-1:8:-3])
+# print(s[3:12])
+# print(s[10:-1])
+# print(s[:5])
+# print(s[5:12:2])
+# print(s[-1:8:-3])
 
 
 
 # # start=0, stop, step=1
 # for i in range(5, 16, 1):
 #     print(i)
+
+
+
+
+
+
+
+s = "0123456789ABCDEF"
+
+# 4567
+# 0123456789AB
+# 3456789ABCDEF
+# 1234
+# 3579
+# ACE
+# BDF
