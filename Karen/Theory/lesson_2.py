@@ -1,4 +1,4 @@
-text = "Apple grape orange BANANA. How are you?"
+# text = "Apple grape orange BANANA. How are you?"
 
 # Строковые методы работают с ПОДСТРОКАМИ (1 и БОЛЕЕ символов)
 # Все функции и методы имеют скобки (либо пустые, либо с параметрами внутри)
@@ -30,3 +30,37 @@ text = "Apple grape orange BANANA. How are you?"
 
 # print(text.lower().count("a"))
 
+
+
+# Срезы/slices
+
+
+
+# Индексы - любой элемент строки можно получить
+# по индексу (номеру буквы в строке)
+# ОТСЧЕТ ИДЕТ С НУЛЯ !!!!!!!
+# Индексы записываются к вадратных скобках
+ 
+# Срезы - часть строки по правилу
+# [start=0:stop:step=1] STOP не входит!!!
+s = "0123456789ABCDEF"
+
+print(s[:7]) # первые 7 символов
+print(s[2:]) # начиная со 2ого и до конца
+
+# 3456789AB
+# ABCDE
+# 01234
+# 579B
+# FC9
+print(s[3:12])
+print(s[10:-1])
+print(s[:5])
+print(s[5:12:2])
+print(s[-1:8:-3])
+
+
+
+# # start=0, stop, step=1
+# for i in range(5, 16, 1):
+#     print(i)
