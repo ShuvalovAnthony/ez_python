@@ -101,3 +101,39 @@
 # УСЛОВИЯ РАБОТАЮТ ТОЛЬКО С 1 значение - ЛОГИЧЕСКИМ - True/False
 # if True/False:
 #     ....
+
+
+# Дан список чисел - заполнить параметры методов, чтобы получился следующий список
+nums = [90, 78, 75, 55, 90]
+nums.append()
+nums.insert()
+nums.append()
+nums.insert()
+
+# [90, 22, 78, 75, 51, 55, 90, 10, 77]
+
+
+
+products = ["apple", "potato", "grape", "melon", "orange", "blueberry", "banana", "carrot"]
+fruits = []
+vegetables = []
+berries = []
+other = []
+
+
+# Разобраться как работает цикл + дописать сортировку продуктов по спискам
+for product in products:
+    print("Куда положим", product, "?")
+    choice = int(input("1 - фрукты, 2 - овощи, 3 - ягоды, 4 - другое: "))
+
+    if ...:
+        ...
+
+
+print("Фрукты", *fruits) # дописать вывод остальных списков
+
+
+
+
+# Вывести сколько раз встречается каждая буква в тексте
+text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vulputate est vitae purus consequat commodo."
