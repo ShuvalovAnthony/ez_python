@@ -15,4 +15,3 @@ exps = findall(pat, f)
 for exp in exps:
     if eval(exp) == 17:
         print(exp)
-
