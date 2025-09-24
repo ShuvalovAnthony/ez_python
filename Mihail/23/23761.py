@@ -5,10 +5,14 @@ def f(start, stop):
     if (start < stop) or (start == 7):
         return 0
     
-    return (
-        f(start - 1, stop) +
-        f(start - 4, stop) +
+    moves = [
+        f(start - 1, stop),
+        f(start - 4, stop),
         f(start//3, stop)
+    ]
+
+    return (
+        sum(moves)
     )
 
 
