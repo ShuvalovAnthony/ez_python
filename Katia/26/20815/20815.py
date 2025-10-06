@@ -46,13 +46,13 @@ cand_with_poluprohod = 0
 
 if poluprohod:
     # первое число в ответе ищем
-    for astro in passed:
-        if astro[1] != poluprohod:
-            id_last_prohod = astro[0]
+        
     # второе число
     for astro in passed:
         if astro[1] == poluprohod:
             cand_with_poluprohod += 1
+        if astro[1] != poluprohod:
+            id_last_prohod = astro[0]
     for astro in failed:
         if astro[1] == poluprohod:
             cand_with_poluprohod += 1
