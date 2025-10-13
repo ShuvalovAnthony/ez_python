@@ -1,7 +1,5 @@
 f = open("Katia/9/21408/data.txt")
 
-
-
 data = [
     [int(i) for i in row.split()] for row in f
 ]
