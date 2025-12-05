@@ -5,7 +5,6 @@ nums = [int(i) for i in f]
 
 summa_negative = sum([i for i in nums if i < 0])
 
-
 def check(triplet: list):
     return (max(triplet)*min(triplet) > summa_negative)
 
