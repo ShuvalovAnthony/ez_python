@@ -167,9 +167,16 @@ oct_num = oct(num)[2:]
 
 sum_cifr = sum([int(i) for i in oct_num])
 
-# summa_cifr = 0
-# for i in oct_num:
-#     summa_cifr += int(i)
+summa_cifr = 0
 
 
-print(sum_cifr)
+# for элемент (которому ты сам даешь имя) in коллекция (iterable):
+#     что-то сделать
+#     при этом есть доступ к текущему элементу по имени
+
+# for digit in oct_num:
+#     summa_cifr += int(digit)
+
+
+# print(sum_cifr)
+
