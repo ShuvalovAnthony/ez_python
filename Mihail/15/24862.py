@@ -12,7 +12,7 @@ for start, stop in coords:
     flag = True
     for x in range(1, 200):
             if not(
-                (((x∈P)→(x∈A)) ∧ (x∈Q)) → (¬(x∈A)→(x∈P))
+                (((x in p) <= (x in a)) and (x in q)) <= ((x not in a) <= (x in p))
             ):
                 flag = False
                 break
