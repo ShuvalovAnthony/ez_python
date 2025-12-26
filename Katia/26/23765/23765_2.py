@@ -10,7 +10,6 @@ data = [
 
 data = sorted(data, key=lambda pair: min(pair))
 
-
 for row in data:
     print(row)
 
