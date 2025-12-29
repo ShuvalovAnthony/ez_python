@@ -2,41 +2,22 @@
 
 f = open("Vladimir/26/23765/26_23765.txt")
 
-sroki_hraneniya = {}
-sroki_godnosti = {}
+# хранения годности
 
-all_numbers = []
+data = [[int(i) for i in row.split()] for row in f]
 
-index = 1
-for row in f:
-    srok_hran, srok_god = [int(i) for i in row.split()]
-    sroki_hraneniya[srok_hran] = index
-    sroki_godnosti[srok_god] = index
-    all_numbers.append(srok_god)
-    all_numbers.append(srok_hran)
+data = sorted(data, key= lambda x: min(x))
 
-    index += 1
+top_rate = []
+bot_rate = []
 
 
-all_numbers = sorted(all_numbers)
+for row in data:
+    if row[0] < row[1]:
+        top_rate.append(row)
+        print("top", row)
+    else:
+        bot_rate.append(row)
+        print("bot", row)
 
-result_left = [] # hranenie
-result_right = [] # godnosti
-last = -1
-
-for num in all_numbers:
-    if (num in sroki_hraneniya):
-        id_ = sroki_hraneniya[num]
-        if (id_ not in result_left) and (id_ not in result_right):
-            result_left.append(id_)
-            last = id_
-    elif (num in sroki_godnosti):
-        id_ = sroki_godnosti[num]
-        if (id_ not in result_left) and (id_ not in result_right):
-            result_right.append(id_)
-            last = id_
-
-if last in result_right:
-    print(last, len(result_right) - 1)
-else:
-    print(last, len(result_right))
+print(len(bot_rate) - 1)
