@@ -24,9 +24,6 @@ print(counter)
 
 
 
-
-
-
 from itertools import product
 
 
