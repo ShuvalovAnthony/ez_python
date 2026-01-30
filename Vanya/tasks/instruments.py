@@ -1,15 +1,27 @@
-# не знаю зачем там про пустую строку сказано
-# на фото не виден формат ввода, возможно иначе надо будет делать
-# split() используем чтобы получить список фамилий
-# (я предполагаю что фамилии идут строкой через пробел)
-goboi = input().split()
-fleita = input().split()
-saksofon = input().split()
+goboi = set()
+while True:
+    surname = input()
+    if surname == "":
+        break
+    goboi.add(surname)
 
-# список всех фамилий без дублей
-all_musicians = set(goboi + fleita + saksofon)
+fleita = set()
+while True:
+    surname = input()
+    if surname == "":
+        break
+    fleita.add(surname)
 
-res = []
+saksofon = set()
+while True:
+    surname = input()
+    if surname == "":
+        break
+    saksofon.add(surname)
+
+all_musicians = goboi.union(fleita).union(saksofon)
+
+res = set()
 
 for musician in all_musicians:
     counter = 0
@@ -22,6 +34,10 @@ for musician in all_musicians:
     )
 
     if counter == 1:
-        res.append(musician)
+        res.add(musician)
 
-print(*res)
+for surname in res:
+    print(surname)
+
+
+(goboi | fleita | saksofon) - ((goboi & fleita) | (goboi & saksofon) | (fleita & saksofon))
