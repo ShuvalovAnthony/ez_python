@@ -3,8 +3,22 @@
 
 
 
-from fsduifsdfnsdkg import convert
+# from my_utils import convert
 
 
-print(convert("ABCDEF273464234ABCDEF", 32, 15))
+# функция по переводу из одной системы счисления в другую
+# 1) если мы работает в границах от 2ой до 10ой систем счисления
+
+def convert(num: int, to_base):
+    res = ''
+
+    if num == 0: return "0"
+
+    while num:
+        res += str(num%to_base)
+        num //= to_base
+
+    return res[::-1]
+
+
 
