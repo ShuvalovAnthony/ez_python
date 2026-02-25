@@ -1,5 +1,5 @@
 f = open(r'Katia/9/23268/23268.txt')
-index = 0
+
 
 
 
@@ -22,7 +22,7 @@ def check(row:list):
         ((sum(povtor))/4 < max(uni))
     )
 
-    
+index = 0
 for row in data:
     index += 1
     if check(row):
