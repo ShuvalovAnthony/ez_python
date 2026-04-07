@@ -48,9 +48,6 @@
 
 
 
-
-
-
 from math import dist
 
 f = open("Karen/27/27637/27_B_27637.txt")
