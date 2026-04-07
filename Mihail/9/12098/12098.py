@@ -22,7 +22,6 @@ def check(row: list):
         (uniq[0]%2 == 0)
     )
 
-
 count = 0
 
 for row in data:

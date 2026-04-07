@@ -17,6 +17,7 @@ def check(row: list):
     )
 
 count = 0
+
 for row in data:
     # print(row)
     if check(row):
