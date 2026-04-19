@@ -1,9 +1,8 @@
-for x in range(-1000, 1000):
-    if (
-        (not x<= 15) and (x < 20)
-    ):
-        print(x)
-
+# for x in range(-1000, 1000):
+#     if (
+#         (not x<= 15) and (x < 20)
+#     ):
+#         print(x)
 
 # НЕ (X <= 15) 
 # (not x <= 15)
