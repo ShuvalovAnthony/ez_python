@@ -13,9 +13,8 @@ for i in range(len(f)):
 
 def find_max_poss_len(substr: str):
     left_f_index = substr.index("F")
-    for i in range(left_f_index, len(substr)):
-        if substr[i] == "0":
-            return 0
+    if "0" in substr[left_f_index:]:
+        return 0
 
     left_part_before_first_f = substr[:left_f_index]
     if "0" not in left_part_before_first_f:
