@@ -1,7 +1,3 @@
-from sys import setrecursionlimit
-
-setrecursionlimit(3000000)
-
 def f(start, stop):
     if start == stop:
         return 1
