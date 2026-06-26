@@ -6,17 +6,20 @@ text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean vulputat
 
 # 2) Найти кол-во слов в тексте
 
-
-
 # 3) Убрать все знаки препинания (есть несколько способов - подумай каким проще)
+
+
 
 s = "QWERTY56789ASD0123"
 
 # Получить следующие строки при помощи срезов:
 # QWERTY56
 # 9ASD01
+# print(s[10:-2])
 # QR58
 # Q
+
+
 
 # Дан список чисел - заполнить параметры методов, чтобы получился следующий список
 # [90, 78, 75, 55, 90, 12, 34]
@@ -50,3 +53,15 @@ s = "QWERTY56789ASD0123"
 
 # def isPrime(num):
 #     ...
+
+
+
+nums = [9, 5, 13, 8, -1, -7, 0]
+
+
+
+for num in nums:
+    print(num)
+    if num == 8:
+        nums.sort()
+        print(nums)
