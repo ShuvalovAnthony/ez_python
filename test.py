@@ -1,26 +1,35 @@
-# res = []
 
-# for treh in range(550, 650):
-#     for dva in range(50, 100):
-#         res.append([treh - dva, treh, dva])
+for i in range(1000):
+    print(i)
 
 
-# res = sorted(res, key=lambda x: (
-#     x[0]
-# ))
 
 
-# for row in res[-5:]:
-#     print(row)
 
 
-a = [5, 2, 4]
+# # res = []
+
+# # for treh in range(550, 650):
+# #     for dva in range(50, 100):
+# #         res.append([treh - dva, treh, dva])
 
 
-def test(lst: list):
-    lst.sort()
+# # res = sorted(res, key=lambda x: (
+# #     x[0]
+# # ))
 
 
-test(a)
+# # for row in res[-5:]:
+# #     print(row)
 
-print(a)
+
+# a = [5, 2, 4]
+
+
+# def test(lst: list):
+#     lst.sort()
+
+
+# test(a)
+
+# print(a)
