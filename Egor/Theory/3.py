@@ -127,15 +127,30 @@
 # )
 
 
-def greetings(name: str):
-    if "a" in name.lower():
-        return "Hello " + name + ". A letter"
-    else:
-        return "Hello " + name
+# def greetings(name: str):
+#     if "a" in name.lower():
+#         return "Hello " + name + ". A letter"
+#     else:
+#         return "Hello " + name
 
 
-names = ["Andrey", "Viktor", "Egor", "Kirill", "Sofa", "Anna"]
+# names = ["Andrey", "Viktor", "Egor", "Kirill", "Sofa", "Anna"]
 
-print(
-    [greetings(name) for name in names]
-)
+# print(
+#     [greetings(name) for name in names]
+# )
+
+
+
+def isChet(n: int):
+    return n%2 == 0
+
+nums = [1, 423, 657, 123, 1323, 65462, 53405, 49235, 12354, 7247374, 9129, 4234]
+
+counter = 0
+
+for num in nums:
+    counter += isChet(num)
+
+
+print(counter)
