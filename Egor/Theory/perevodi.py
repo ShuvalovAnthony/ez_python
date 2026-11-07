@@ -23,23 +23,22 @@ num = 4234
 
 # 1.3) В любую СС от 2 до 36 включительно
 
-# from string import digits, ascii_uppercase
-
-# alph = digits + ascii_uppercase[:7]
-
 # # функция перевода в 21ричную СС
+from string import digits, ascii_uppercase
+    
+alph = digits + ascii_uppercase[:7] # 10 цифр от 0 до 9 + 7 букв
 
-# def to_17(num: int):
-#     res = ''
+def to_17(num: int):
+    res = ''
 
-#     while num > 0:
-#         res += alph[num%17]
-#         num //= 17
+    while num > 0:
+        res += alph[num%17]
+        num //= 17
 
-#     return res[::-1]
+    return res[::-1]
 
 
-# print(to_17(num))
+print(to_17(num))
 
 
 
